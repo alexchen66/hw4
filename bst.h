@@ -583,6 +583,7 @@ void BinarySearchTree<Key, Value>::remove(const Key& key)
                 std::cout << "targetNode is NULL: " << std::endl;
             }
             root_ = nullptr;
+            delete targetNode;
             return;
         }
         std::cout << "(4)targetNode key is: " << targetNode->getKey() << std::endl;
